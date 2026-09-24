@@ -1,35 +1,48 @@
-M: MongoDB (DataBase)
-E: ExpressJS (Backend)
-R: ReactJS (Frontend)
-N: NodeJS (Backend)
+# MERN Stack Project
 
-## Frontend (Browser)               Backend (Server)            DataBase
+| Letter | Technology | Role |
+| --- | --- | --- |
+| M | MongoDB | DataBase |
+| E | ExpressJS | Backend |
+| R | ReactJS | Frontend |
+| N | NodeJS | Backend |
 
-        React App                   ExpressJS + NodeJS           MongoDB
+## Architecture
 
+| Frontend (Browser) | Backend (Server) | DataBase |
+| --- | --- | --- |
+| React App | ExpressJS + NodeJS | MongoDB |
 
-Backend:
+## Backend
 
-# npm init -y
+### Installation
 
-# npm i express / npm install express
+```bash
+npm init -y
+npm i express
+npm i nodemon
+npm i mongoose
+npm i dotenv
+```
 
-# npm i nodemon
+### Run
 
-# npm i mongoose
+```bash
+npm run dev
+```
 
-# npm i dotenv
+### API Endpoints
 
-## Run: npm run dev
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| GET | `/workouts` | Get all the Workout docs |
+| POST | `/workouts` | Create a new Workout doc |
+| GET | `/workouts/:id` | Get a single workout doc |
+| DELETE | `/workouts/:id` | Delete a single workout doc |
+| PATCH | `/workouts/:id` | Update a single Workout doc |
 
+## Frontend
 
-## API Endpoints:
-
-GET           /workouts                 --> Get all the Workout docs
-POST          /workouts                 --> Create a new Workout doc
-GET           /workouts/:id             --> Get a single workout doc
-DELETE        /workouts/:id             --> Delete a single workout doc
-PATCH         /workouts/:id             --> Update a single workout doc                
-
-Frontend:
+```bash
 npx create-react-app frontend
+```
