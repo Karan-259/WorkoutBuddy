@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 
 const WorkoutRoutes = require('./Routes/workout')
+const UserRoutes = require('./Routes/user')
 
 dotenv.config()
 
@@ -29,7 +30,8 @@ app.get('/', (req, res) => {
     )
 })
 
-app.use('/api/workouts/', WorkoutRoutes)
+app.use('/api/workouts', WorkoutRoutes)
+app.use('/api/user', UserRoutes)
 
 //Database Connection
 mongoose.connect(process.env.MONGO_URI).then(() => {

@@ -13,6 +13,13 @@
 | --- | --- | --- |
 | React App | ExpressJS + NodeJS | MongoDB |
 
+## Frontend
+
+```bash
+npx create-react-app frontend
+```
+
+
 ## Backend
 
 ### Installation
@@ -40,9 +47,3 @@ npm run dev
 | GET | `/workouts/:id` | Get a single workout doc |
 | DELETE | `/workouts/:id` | Delete a single workout doc |
 | PATCH | `/workouts/:id` | Update a single Workout doc |
-
-## Frontend
-
-```bash
-npx create-react-app frontend
-```

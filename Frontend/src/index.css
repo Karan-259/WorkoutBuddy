@@ -97,11 +97,33 @@ form button{
   cursor: pointer;
 }
 
-div .error{
-padding: 10px;
-background-color: #ffefef;
-border: 2px solid var(--error);
-color: var(--error);
-border-radius: 4px;
-margin: 20px 0;
+  div.error{
+  padding: 10px;
+  background-color: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+  }
+
+input.error{
+  border: 1px solid var(--error);
+  /* color: var(--primary); */
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+nav a{
+  margin: 0 0 0 10px;
+}
+
+form.Signup, form.login{
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 25px;
 }

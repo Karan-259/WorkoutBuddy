@@ -13,7 +13,7 @@ const Home = () => {
         const json = await response.json()
 
         if(response.ok){
-            //use State
+            // use State
             // setWorkouts(json)
             dispatch({type: 'SET_WORKOUTS', payload: json})
         }
